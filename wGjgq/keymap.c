@@ -297,7 +297,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       clear_oneshot_mods();
       if (shift_on) {
         if (ctrl_on) SEND_STRING(SS_TAP(X_END));
-        else SEND_STRING(SS_TAP(X_END)SS_TAP(X_ENTER)));
+        else SEND_STRING(SS_TAP(X_END)SS_TAP(X_ENTER));
       } else {
         if (ctrl_on) SEND_STRING(SS_TAP(X_END)";");
         else SEND_STRING(SS_TAP(X_END)";"SS_TAP(X_ENTER));
